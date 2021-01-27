@@ -1,12 +1,11 @@
 const checkVersion = (firstNumber, secondNumber) => {
-    return firstNumber > secondNumber ?
-        console.log(firstNumber, '>', secondNumber)
-        : firstNumber < secondNumber
-            ? console.log(secondNumber, '>', firstNumber)
-            : console.log('equal');
+    return firstNumber.length > secondNumber.length ? console.log(firstNumber, '>', secondNumber)
+        : firstNumber > secondNumber ? console.log(firstNumber, '>', secondNumber)
+            : firstNumber < secondNumber ? console.log(secondNumber, '>', firstNumber)
+                : console.log('equal')
 }
 
-// checkVersion('4.2.9', '0.9.1')
+checkVersion('4.3333311109.022', '4.33309.99999999900001')
 
 const checkPhone = (number) => {
     let num = [...number]
@@ -21,6 +20,6 @@ const checkPhone = (number) => {
 // console.log(checkPhone('65432768'))
 // console.log(checkPhone('988722354264'))
 // console.log(checkPhone('9887264'))
-console.log(checkPhone('9887223264'))
-console.log(checkPhone('9897223264'))
+// console.log(checkPhone('9887223264'))
+// console.log(checkPhone('9897223264'))
 // console.log(checkPhone('9861484326'))
